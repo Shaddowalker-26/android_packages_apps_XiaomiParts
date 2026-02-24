@@ -186,7 +186,7 @@ public class CustomSeekBarPreference extends Preference implements Slider.OnChan
             mSlider.setStepSize(mInterval);
         }
 
-        mSlider.setTrackActiveTintList(getContext().getColorStateList(
+/*        mSlider.setTrackActiveTintList(getContext().getColorStateList(
                 com.android.settingslib.widget.preference.slider.R.color.settingslib_expressive_color_slider_track_active));
         mSlider.setTrackInactiveTintList(getContext().getColorStateList(
                 com.android.settingslib.widget.preference.slider.R.color.settingslib_expressive_color_slider_track_inactive));
@@ -198,7 +198,7 @@ public class CustomSeekBarPreference extends Preference implements Slider.OnChan
                 com.android.settingslib.widget.preference.slider.R.color.settingslib_expressive_color_slider_track_active));
         mSlider.setTickInactiveTintList(getContext().getColorStateList(
                 com.android.settingslib.widget.preference.slider.R.color.settingslib_expressive_color_slider_track_inactive));
-
+*/
         if (SettingsThemeHelper.isExpressiveTheme(getContext())) {
             Resources res = getContext().getResources();
             mSlider.setTrackHeight(res.getDimensionPixelSize(
