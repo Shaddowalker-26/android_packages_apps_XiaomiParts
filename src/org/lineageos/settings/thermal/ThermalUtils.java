@@ -12,7 +12,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.UserHandle;
-import android.telecom.DefaultDialerManager;
+import android.telecom.TelecomManager;
 
 import androidx.preference.PreferenceManager;
 
@@ -76,7 +76,9 @@ public final class ThermalUtils {
                 return mThermalProfileValues[3]; // Camera
             }
 
-            if (DefaultDialerManager.getDefaultDialerApplication(mContext).equals(packageName)) {
+            TelecomManager telecomManager = mContext.getSystemService(TelecomManager.class);
+            if (telecomManager != null
+                   && packageName.equals(telecomManager.getDefaultDialerPackage())) {
                 return mThermalProfileValues[4]; // Dialer
             }
 
