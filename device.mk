@@ -9,4 +9,4 @@ PRODUCT_PACKAGES += \
     XiaomiParts
 
 # XiaomiParts sepolicy
-BOARD_SEPOLICY_DIRS += packages/apps/XiaomiParts/sepolicy
+#BOARD_SEPOLICY_DIRS += packages/apps/XiaomiParts/sepolicy
